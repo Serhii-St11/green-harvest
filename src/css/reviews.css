@@ -1,0 +1,117 @@
+.reviews-section {
+    background-color: #fbfbfb;
+}
+
+.reviews-heder {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.04;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #141414;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.reviews-heder-part {
+    color: #576f35;
+}
+
+.reviews-descr {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    color: #141414;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.reviews-list {
+    display: flex;
+    gap: 20px;
+}
+
+.reviews-list-item:nth-child(2),
+.reviews-list-item:nth-child(3) {
+    display: none;
+}
+.reviews-list-item {
+max-width: 335px;
+}
+
+.reviews-list-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    border: 1px solid rgba(122, 49, 69, 0.3);
+    border-radius: 24px;
+    padding-top: 20px;
+    padding-left: 16px;
+    padding-bottom: 38px;
+    padding-right: 16px;
+    
+    min-height: 238px;
+}
+
+.reviewers-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.reviewers-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #040306;
+}
+
+.reviewers-descr {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    text-align: center;
+    color: rgba(4, 3, 6, 0.4);
+}
+
+@media screen and (min-width: 768px) {
+    .reviews-heder {
+        font-size: 64px;
+        line-height: 1;
+        margin-bottom: 25px;
+        max-width: 553px;
+    }
+
+    .reviews-descr {
+        font-size: 16px;
+        line-height: 1.25;
+        max-width: 553px;
+        margin-bottom: 50px;
+    }
+
+    .reviews-list {
+        gap: 18px;
+    }
+    .reviews-list-item {
+        max-width: 343px;
+    }  
+    .reviews-list-item:nth-child(2) {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+        .reviews-list {
+            justify-content: space-between;
+        }
+    .reviews-list-item:nth-child(3) {
+        display: block;
+    }
+}
